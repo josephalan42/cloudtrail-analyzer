@@ -3,6 +3,8 @@
 This Flask-based tool helps visualize and analyze AWS CloudTrail log files (JSON format). It parses CloudTrail logs to identify security-relevant actions and presents the data in a web interface.
 
 ---
+## Screenshots
+![alt_text](https://github.com/josephalan42/cloudtrail-analyzer/blob/main/images/Parsed%20Logs.png)
 
 ## 📌 Features
 
