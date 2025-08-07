@@ -1,0 +1,46 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "EXAMPLEID123456789",
+        "arn": "arn:aws:iam::123456789012:user/test-user",
+        "accountId": "123456789012",
+        "userName": "test-user"
+      },
+      "eventTime": "2023-12-12T15:12:31Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.0.2.0",
+      "userAgent": "Mozilla/5.0",
+      "responseElements": {
+        "ConsoleLogin": "Success"
+      },
+      "additionalEventData": {
+        "LoginTo": "https://console.aws.amazon.com/console/home",
+        "MFAUsed": "Yes"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "userName": "test-user"
+      },
+      "eventTime": "2023-12-12T15:14:10Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "TerminateInstances",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "192.0.2.0",
+      "requestParameters": {
+        "instancesSet": {
+          "items": [
+            { "instanceId": "i-1234567890abcdef0" }
+          ]
+        }
+      }
+    }
+  ]
+}
